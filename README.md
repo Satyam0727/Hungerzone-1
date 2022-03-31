@@ -1,22 +1,16 @@
 # hungerzone
 
-This is a food app using Node.js, Express, Passport, Mongoose, EJS and some other packages.
+This is a food website using Node.js, Express, Passport, Mongoose, EJS and some other packages.
 
 
-
-### Usage
+### Database connected 
 
 ```sh
-$ npm install
+MongoDB Atlas
 ```
 
-```sh
-$ npm start
-# Or run with Nodemon
-$ npm run dev
 
+### the website will start at
+```sh
 # Visit http://localhost:5000
 ```
-
-### MongoDB
-
