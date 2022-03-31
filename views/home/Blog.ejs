@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ------------------------------header ----------------------------------*/
+header{
+    background-image: url(https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.return
+{   
+    font-family: 'Lato', 'Arial', sans-serif;
+    /* margin: 20px; */
+    padding: 20px;
+    font-size: 18px;
+    text-align: right;
+    color: white;
+    position: relative;
+    margin-right: 20px;
+}
+.return a{
+    color: rgb(87, 0, 0);
+    text-decoration: none;
+}
+.return a:hover{
+    border-bottom: solid 1px rgb(87, 0, 0);
+}
+.heading{
+    color: rgb(41, 41, 41);
+    background-color: rgba(255, 255, 255, 0.473);
+    overflow: hidden;
+    font-size: 48px;
+    padding: 10%;
+    margin: 0%;
+    width: 80%;
+}
+center{
+    margin: 0%;
+}
+
+h1 {
+    font-size: 200%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: 'Lato', 'Arial';
+    margin: 0%;
+}
+@media screen and (max-width:700px)
+{
+    .heading{
+        font-size: medium;
+        padding-top: 35%;
+        padding-bottom: 35%;
+    }
+}
+
+/* ********************CONTAINER***************** */
+.containera{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 70%;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.13), 0 6px 20px 0 rgba(0, 0, 0, 0.295);
+    padding: 10%;
+    padding-top: 5%;
+    border-radius: 5px;
+}
+.containera:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432), 0 6px 20px 0 rgba(0, 0, 0, 0.459);
+}
+
+.containera a{
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.containera a:hover{
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+p{
+    word-spacing: 5px;
+    font-size: larger;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+img{
+    height: 50%;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+hr{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+ul{
+    font-size: larger;
+    word-spacing: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ol{
+    font-size: larger;
+    word-spacing: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-one{
+    overflow: hidden;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(74, 138, 233, 0.171);
+    height: auto;
+    width: 60%;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.13), 0 6px 20px 0 rgba(0, 0, 0, 0.295);
+    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    border: solid 3px rgb(4, 88, 212);
+}
+.container-one:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432), 0 6px 20px 0 rgba(0, 0, 0, 0.459);
+}
+
+
+.container-recipe{
+    overflow: hidden;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: auto;
+    width: 60%;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.13), 0 6px 20px 0 rgba(0, 0, 0, 0.295);
+    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    border: solid 3px rgb(117, 2, 59);
+}
+.container-recipe:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432), 0 6px 20px 0 rgba(0, 0, 0, 0.459);
+}
+
+
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/blogpage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Blog</title>
+</head>
+<body>
+    <!-- ------------------------------HEADER-------------------------------------- -->
+    <header>
+        <div class="return"><a href="" class="button" type="button"></a></div>
+        <center><div class="heading"><h1>FOOD BLOG</h1></div></center>
+    </header>
+
+
+
+
+<center>
+    <div class="containera">
+        <h1>TURTLE CAKE</h1>
+        <hr>
+        <p>
+            <i>Intensely rich chocolate cake with waterfalls of caramel and pecan jewels inspired by the delicious turtle cake from Cafe Latte. The perfect dessert for two! Or six! Or one!</i>
+        </p> 
+        <a class="link" href="#recipe">Go to Recipe</a>
+        <img src="https://pinchofyum.com/wp-content/uploads/Turtle-Cake-1-2-768x1152.jpg" alt="NETWORK ERROR">
+        <p>
+            We are kicking off the February Fun Series with the most fun thing around. An extra rich, coffee-spiked, chocolatey, caramelly little copycat turtle cake that absolutely has our hearts and will have yours, too.
+
+            Okay, if you are a resident Twin Citizen and you’ve wandered down bustling Grand Avenue in St. Paul and found yourself drawn in by those bright swoopy pinky-red neon letters that say “Cafe Latte,” then you surely have met and fallen deeply, madly, wholly in love with their turtle cake. It is a thing of glory.
+        </p>
+        <hr>
+        <p>
+            That is the story here. An intensely rich chocolatey cake, cascading with caramel, and jeweled with huge pecans. Layers on layers, possibly too many layers, and also never enough layers. This cake means business. This cake means “I love you.” This is the stuff date nights are made of.
+
+            <br>SO OBVIOUSLY IT HAD TO BE FIGURED OUT HOW TO BE MADE AT HOME. Because, even though it is worth a trip to St. Paul literally always, a trip into St. Paul cannot always be had. (Unless you maybe live right off of Grand Ave. in which case, would you like a bunch of new roommates? We also come with children and pets.)  
+
+            So here we are, a (maybe not so) tiny turtle cake for two. Or six. Or one. Let your heart decide.
+        </p>
+        <img src="https://pinchofyum.com/wp-content/uploads/Turtle-Cake-1-960x1440.jpg" alt="NETWORK ERROR">
+        <h1>Ingredients For This Turtle Cake</h1>
+        <p>
+            To make this fun little cake (or pair of cakes) happen, you’ll need to gather your baking staples and your Bake-Off fortitude. JK, you’ll just need your love of chocolate and excitement for cake, we don’t need any Hollywood Handshakes around here – although, you will deserve one, promise.
+        </p>
+        <ul>
+            <li>baking essentials (egg, flour, sugar, oil, baking soda, salt)</li>
+            <li>sour cream or plain full-fat Greek yogurt</li>
+            <li>cocoa powder</li>
+            <li>some strong hot coffee (makes it extra rich and yummy)</li>
+        </ul>
+        <p>
+            For the frosting and toppings we used store-bought caramel to save time and used candied pecans because we’re a little extra (plain toasted ones are also great).
+        </p>
+        <ul>
+            <li>milk</li>
+            <li>sugar</li>
+            <li>butter</li>
+            <li>chocolate chips</li>
+            <li>caramel</li>
+            <li>pecans</li>
+        </ul>
+        <img src="https://pinchofyum.com/wp-content/uploads/Turtle-Cake-4-960x1440.jpg" alt="NETWORK ERROR">
+        <hr>
+        <h1>How To Make Turtle Cakes</h1>
+        <p>
+            It is somehow always more fun to make a tiny version of something, right? Because, “Look at that cute little caaaaake!” And luckily, making it miniature isn’t really any more work than making a big one happen, so here we go!
+        </p>
+        <ol>
+            <li> <b>Batter up.</b> Whisk all the turtle cake ingredients together. Grease three lil’ ramekins & divide batter between ’em!</li>
+            <li> <b>On your mark, get set, bake!</b> 350 degrees for 15-20 minutes. Remove the cakes gently from the ramekins and allow to cool.</li>
+            <li> <b>Okay, frosting time.</b> Bring the milk, sugar, and butter to a boil and then melt in chocolate chips and whisk until smooth. Allow to cool a bit for ease of frosting.</li>
+            <li> <b>Start layering!</b> Arrange by layering cake, frosting, pecans, caramel, and then keep stacking until you have a totally wonderful, over-the-top cake.</li>
+        </ol>
+        <p>
+            Hot tip, hot tip — it’s great to chop the pecans for the middle layers so the cake stacks nicely and the texture is very pleasing. But then we leave them whole on top for optimal beautiful fanciness.
+        </p>
+    </div>
+
+<!-- --------------------------FAQ---------------------------- -->
+
+    <div class="container-one">
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        <hr>
+        <p>
+            <b>Do you have any recommendations for arranging the pecans?</b>
+        </p>
+        <p>
+            Chop the pecans that go in the middle layers (easier to eat) and then use the whole pecans on top (pretty to look at).
+        </p>
+        <p>
+            <b>Any tips on frosting the cake?</b>
+        </p>
+        <p>
+            When you’re frosting the cake, you’ll want to spread the frosting just to the edge and a little past it so that it doesn’t completely drip down but just kind of waterfalls over the edge. It works well to just let it naturally drip down the cake vs. actually spreading it over the sides.
+        </p>
+        <p>
+            <b>What size of ramekin do you suggest for making this?</b>
+        </p>
+        <p>
+            8-ounce ramekins are perfect here (affiliate link). The ones in our kitchen are 4 inches wide and about 2 inches tall.
+        </p>
+        <p>
+            <b>What kind of pecans should I use?</b>
+        </p>
+        <p>
+            Regular toasted pecans work, but why not take it over the top with candied pecans?! You will not regret it.
+        </p>
+    </div>
+<!-- ------------------------------------recipe---------------------- -->
+    <div class="container-recipe" id="recipe">
+        <h1>RECIPE</h1>
+        <hr>
+        <p><b>INGREDIENTS</b></p>
+        <p>Chocolate Cake :</p>
+        <ul>
+            <li>1 egg yolk</li>
+            <li>1/4 cup vegetable oil</li>
+            <li>1/4 cup sour cream or plain full-fat Greek yogurt</li>
+            <li>1/3 cup granulated sugar</li>
+            <li>1/2 cup flour</li>
+            <li>2 tablespoons cocoa</li>
+            <li>1/4 teaspoon salt</li>
+            <li>1 teaspoon baking soda</li>
+            <li>2–3 tablespoons strong hot coffee (this will loosen the batter up and adds great flavor)</li>
+        </ul>
+        <p>Chocolate Frosting :</p>
+        <ul>
+            <li>2 tablespoons milk</li>
+            <li>1/4 cup sugar</li>
+            <li>2 tablespoons butter</li>
+            <li>1/2 cup chocolate chips</li>
+            <li>1 tablespoon coffee</li>
+        </ul>
+        <p>Toppings:</p>
+        <ul>
+            <li>Caramel</li>
+            <li>Toasted or candied pecan pieces</li>
+        </ul>
+        <img src="https://pinchofyum.com/wp-content/uploads/Turtle-Cake-3-960x1440.jpg" alt="NETWORK ERROR">
+        <hr>
+
+        <p><b>INSTRUCTIONS</b></p>
+        <ol>
+            <li>Preheat the oven to 350 degrees.</li>
+            <li>Whisk all the cake ingredients into a batter, using the coffee to thin it out (it’s a pretty thick batter, even with the coffee). Generously grease four 8-ounce ramekins with cooking spray. Divide batter between the ramekins and spread into the dishes so it covers the bottom.</li>
+            <li>Bake for 15-20 minutes. Remove the cakes gently from the ramekins and allow to cool for at least 20 minutes before adding frosting.</li>
+            <li>In a small saucepan, bring the milk, sugar, and butter to a boil. After 15-20 seconds of boiling, remove from heat and melt in chocolate chips. Whisk until smooth. Add coffee to thin slightly, whisking to get it smooth and shiny. Allow to cool for a few minutes so the frosting isn’t quite so runny (it’ll still be runny, you just don’t want it to be super hot when you spread it on the cakes).</li>
+            <li>With this recipe, you can either make one 3-layer cake or two 2-layer cakes. Layer cake, frosting, pecans, caramel, and repeat until you have your nice decadent, over-the-top cake. I just spoon a bit of frosting into the center of each cake and gradually work it out to the edge to get a waterfall effect. I chop up the pecans that go in the middle layer for a more textured crunchy bite, and then use the whole pecans in a circular pattern on top.</li>
+            <li>Eat the cake while warm (yum) or store in the fridge for a day or two (also very yum)! SO GOOD.</li>
+        </ol>
+    </div>
+</center>
+
+<!-- ------------------------------footer--------------------- -->
+
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container ">
+      <!-- Section: Social media -->
+      <section class="">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white">Hungerzone</a>
+    </div>
+    <!-- Copyright -->
+  </footer> 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
