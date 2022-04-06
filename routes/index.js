@@ -12,6 +12,12 @@ router.get('/home/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
+router.get('/home/dashboard.ejs', ensureAuthenticated, (req, res) =>
+  res.render('home/dashboard.ejs', {
+    user: req.user
+  })
+);
+
 router.get('/home/AboutUs.ejs', ensureAuthenticated, (req, res) =>
   res.render('home/AboutUs.ejs', {
     user: req.user

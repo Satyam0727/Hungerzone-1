@@ -181,7 +181,22 @@ ol{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432), 0 6px 20px 0 rgba(0, 0, 0, 0.459);
 }
 
-
+.navbar{
+    /* float: right; */
+    /* position: fixed; */
+    text-align: right;
+    background-image: url(https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* height: 100vh; */
+    color: white;
+    z-index: 2;
+}
+.navbar a{
+    float: right;
+}
 
     </style>
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
@@ -194,8 +209,44 @@ ol{
 </head>
 <body>
     <!-- ------------------------------HEADER-------------------------------------- -->
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.ejs">Home</a>
+                </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="AboutUs.ejs">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.ejs">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PhotoGallery.ejs">Photo Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Review.ejs">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Subscription.ejs">Subscribe</a>
+              </li>
+              <li class="nav-item">
+                <a href="/users/logout" class="nav-link">Log Out</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
     <header>
-        <div class="return"><a href="" class="button" type="button"></a></div>
+        <!-- <div class="return"><a href="" class="button" type="button"></a></div> -->
         <center><div class="heading"><h1>FOOD BLOG</h1></div></center>
     </header>
 
@@ -381,7 +432,7 @@ ol{
   
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
+      © 2022 Copyright:
       <a class="text-white">Hungerzone</a>
     </div>
     <!-- Copyright -->

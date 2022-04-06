@@ -90,14 +90,30 @@ h1 {
     }
 }
 
-.container{
+.container_a{
     padding: 5px;
     margin: 20px;
     /* background-color: #dd4b39; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.058), 0 6px 20px 0 rgba(0, 0, 0, 0.295);
 }
-.container:hover{
+.container_a:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.432), 0 6px 20px 0 rgba(0, 0, 0, 0.459);
+}
+.navbar{
+    /* float: right; */
+    /* position: fixed; */
+    text-align: right;
+    background-image: url(https://media.istockphoto.com/photos/filipino-food-table-picture-id1321284752?k=20&m=1321284752&s=612x612&w=0&h=hmnitpjxZQdqCZj1zS-LP49fPXPB9NLqji8NGIcyi80=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* height: 100vh; */
+    color: white;
+    z-index: 2;
+}
+.navbar a{
+    float: right;
 }
 
 
@@ -112,12 +128,46 @@ h1 {
   </head>
   <body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.ejs">Home</a>
+                </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="AboutUs.ejs">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.ejs">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PhotoGallery.ejs">Photo Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Review.ejs">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Subscription.ejs">Subscribe</a>
+              </li>
+              <li class="nav-item">
+                <a href="/users/logout" class="nav-link">Log Out</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
     <header>
-        <div class="return"><a href="" class="button" type="button"></a></div>
+        <!-- <div class="return"><a href="" class="button" type="button"></a></div> -->
         <center><div class="heading"><h1>REVIEWS</h1></div></center>
     </header>
 
-    <div class="container">
+    <div class="container_a">
     <div class="form-group">
         <label for="title">Name</label>
         <input type="text" id="title" aria-describedby="emailHelp" class="form-control">
@@ -130,7 +180,7 @@ h1 {
 
     <button id="add" onclick="check()" class="btn btn-primary btn-sm" type="submit">Add Comment</button>
 </div>
-    <div class="container">
+    <div class="container_a">
         <div class="text-center"></div>
         
         <div id="items" class="my-4">
@@ -191,7 +241,7 @@ h1 {
       
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
+          © 2022 Copyright:
           <a class="text-white" href="https://mdbootstrap.com/">Hungerzone</a>
         </div>
         <!-- Copyright -->
@@ -276,5 +326,7 @@ h1 {
         }
     
     </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
