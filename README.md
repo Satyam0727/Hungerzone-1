@@ -12,5 +12,10 @@ MongoDB Atlas
 
 ### the website will start at
 ```sh
+use 
+node app.js
+or 
+nodemon app.js 
+to start.
 # Visit http://localhost:5000
 ```
