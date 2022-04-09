@@ -12,8 +12,13 @@
 }
 
 .row {
+  
+   margin-right: 30px;
     text-align: center;
     font-size:150% ;
+}
+.row h2{
+    padding-bottom: 50px;
 }
 
 section {
@@ -108,6 +113,91 @@ blockquote{
         
 
 }
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
 @media screen and (max-width:700px){
 .brand{
     font-size: medium;
@@ -117,9 +207,7 @@ blockquote{
 
     .about-me{
     display: block;
-    text-align: center;
-    height: 140vh;
-    }
+     }
     .about-me-n{
     display: block;
     }
@@ -128,14 +216,9 @@ blockquote{
     width: 100%;
     margin: 0%;
     padding: 0%;
-  }
-
-  .CONTACT_US{
-    height: auto;
-  }
-  .CONTACT_US img{
-    display: none;
-  }
+     }
+      
+    
      .footer-nav{
         display: block;
         width: 100%;
@@ -143,11 +226,54 @@ blockquote{
         padding: 0%;
      }
 }
-.row{
-  display: flex;
-  justify-content: center;
+
+
+/* Contact us*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
 }
 
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    
+}
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
 .navbar{
     /* float: right; */
     /* position: fixed; */
@@ -164,41 +290,18 @@ blockquote{
 .navbar a{
     float: right;
 }
-.CONTACT_US{
-  display: flex;
-  justify-content: space-around;
-  padding: 2%;
-  margin: 2%;
-  height: 50vh;
-  border-radius: 20px;
-}
-
-.CONTACT_US a{
-  transition: all 0.3s;
-  /* transition: 0.5sec; */
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.407);
-}
-.CONTACT_US a:hover{
-  color: rgb(0, 0, 0);
-}
-.c_text{
-  /* margin: 2%; */
-  padding-top: 10px;
-}
-
   </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet"  type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="fonts/ionicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -232,7 +335,6 @@ blockquote{
       </div>
     </div>
   </nav>
-
     <header>
         
      <div class="brand">
@@ -282,69 +384,116 @@ All Plant. All Cuisines. All Impact.
         </div>
     </div>
 </div>
-
-<div class="CONTACT_US">
-  <img src="https://www.freeiconspng.com/uploads/contact-icon-17.png" alt="">
-  <div class="about-me_c">
-      <h1>CONTACT US</h1>
-        <p>E-MAIL : <a href="mailto:hungerzone@gmail.com">hungerzone@gmail.com</a></p>
-        <p>PHONE : 99999-99999</p>
-        <p>FACEBOOK : <a href="#!">hungerzone</a></p>
-        <p>INSTAGRAM : <a href="#!">hungerzone</a></p>
-  </div>
-</div>
+  
+<section class="section-form">
+    <div class="row">
+        <h2>We're happy to hear from you</h2>
+    </div>
+    <div class="row">
+        <form method="post" action="#" class="contact-form">
+            <div class="row">
+                <div>
+                    <label for="name">Name</label>
+                </div>
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label for="find-us">How did you find us?</label>
+                </div>
+                <div >
+                    <select name="find-us" id="find-us">
+                        <option value="friends" selected>Friends</option>
+                        <option value="search">Search engine</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+          
+            <div class="row">
+                <div >
+                    <label>Drop us a line</label>
+                </div>
+                <div >
+                    <textarea name="message" placeholder="Your message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>&nbsp;</label>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Send it!">
+                </div>
+            </div>
+            
+        </form>
+        
+    </div>
+</section>   
+</section>
 <!-- ------------------------------footer--------------------- -->
 
 <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container ">
-      <!-- Section: Social media -->
-      <section class="">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-  
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-  
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-  
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-  
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i
-        ></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright:
-      <a class="text-white">Hungerzone</a>
-    </div>
-    <!-- Copyright -->
-  </footer> 
+  <!-- Grid container -->
+  <div class="container ">
+    <!-- Section: Social media -->
+    <section class="">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white">Hungerzone</a>
+  </div>
+  <!-- Copyright -->
+</footer> 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     
 </body>
