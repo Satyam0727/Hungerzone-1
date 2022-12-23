@@ -1,3 +1,4 @@
+require('dotenv').config(); //for env variables
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
@@ -13,7 +14,7 @@ require('./config/passport')(passport);
 // Connect to MongoDB
 mongoose
   .connect(
-   'mongodb+srv://prashant:virprashant123@cluster0.l2mux.mongodb.net/loginDB?retryWrites=true&w=majority',
+   'mongodb+srv://'+process.env.PRIVATE_DATA+'@cluster0.l2mux.mongodb.net/loginDB?retryWrites=true&w=majority',
     { useNewUrlParser: true ,useUnifiedTopology: true}
   )
   .then(() => console.log('MongoDB Connected'))
